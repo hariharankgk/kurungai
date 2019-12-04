@@ -1,0 +1,46 @@
+@1:black; @2:white; @3:whitesmoke; @grey:grey;
+
+.w(@w){width:@w;} .m-w(@w){min-width:@w;} .M-w(@w){max-width:@w;}.h(@h){height:@h;}.m-h(@h){min-height:@h;} .M-h(@h){max-height:@h;}.wa{width:auto;}.ha{height:auto;}
+
+
+/*class-minxin*/
+.fl{float:left;}.fr{float:right}.fn{float:none !important;}.cb{clear:both}.cl{clear:left;}.cr{clear:right;}.cn{clear:none;}
+.tl{text-align: left;}.tr{text-align: right;}.tc{text-align: center}.tj{text-align: justify;}
+ 
+/*Padding Mixins*/
+.p(@top, @right, @bottom, @left){padding:@top @right @bottom @left;}.pt(@top){padding-top:@top;}.pr(@right){padding-right:@right;}.pb(@bottom){padding-bottom:@bottom;}.pl(@left){padding-left:@left;} .pa(@all){padding:@all;}
+
+/*Margin Mixins*/
+.m(@top,@right,@bottom,@left){margin:@top @right @bottom @left;}.mt(@top){margin-top:@top;}.mr(@right){margin-right:@right;}.mb(@bottom){margin-bottom:@bottom;}.ml(@left){margin-left:@left;} .ma(@all){margin:@all;}
+
+/*Font*/
+.f(@size){font-size:@size;} .fw(@weight){font-weight:@weight;} .lh(@lh){line-height: @lh;}
+
+
+/*Color Theme*/
+.c(@c){color:@c;} .bc(@bc){background-color:@bc;} 
+
+/*border style*/
+.ba(@s, @c){border:@s solid @c;} .bl(@s, @c){border-left:@s solid @c;} .br(@s, @c){border-right:@s solid @c;} .bb(@s, @c){border-bottom:@s solid @c;} .bt(@s, @c){border-top:@s solid @c;} .bn{border:none;}
+
+/*OffSet*/
+.offset(@s,@t){[class*="col-"]{padding-left:@s !important; padding-right:@t !important;}}
+
+/*Visibility*/
+.nv{opacity: 0; visibility: hidden;} .v{opacity: 1; visibility: visible;}
+
+/*Transition*/
+.trs(@property, @time , @type)
+{
+    -webkit-transition: @property @time @type;
+    -moz-transition: @property @time @type;
+    -o-transition: @property @time @type;
+    transition: @property @time @type;
+}
+.radius(@radius) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+.trf(@value){-webkit-transform: @value; -moz-transform: @value; -ms-transform: @value; -o-transform: @value; transform: @value;}
