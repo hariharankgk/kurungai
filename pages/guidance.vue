@@ -17,7 +17,7 @@
                         </div>
                     </div>
                     <div class="guide-train">
-                        <h4>Trains From Chennai Egmore to Valliyur :</h4> <img src="asset/images/trains.png"> </div>
+                        <h4>Trains From Chennai Egmore to Valliyur :</h4> <img src="@/assets/images/train_timings.png"> </div>
                     <div class="row">
                         <div class="col-sm-4 col-md-3">
                             <div class="panel">

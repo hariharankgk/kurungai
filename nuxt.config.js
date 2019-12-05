@@ -2,6 +2,8 @@
 export default {
   mode: 'universal',
   /*
+  router: { base: '/vue/krg' },
+  
   ** Headers of the page
   */
   head: {
@@ -12,7 +14,7 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '@/assets/images/Nambi2.jpg' },
+      { rel: 'icon', type: 'image/jpg', href: '/vue/krg/Nambi2.jpg' },
       { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css' },
       { rel: 'stylesheet', href: '@/assets/css/style.css' }
     ],
@@ -25,7 +27,7 @@ export default {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#f0e68c' },
   /*
   ** Global CSS
   */
@@ -49,6 +51,9 @@ export default {
     // Doc: https://bootstrap-vue.js.org/docs/
     // 'bootstrap-vue/nuxt',
     '@nuxtjs/pwa',
+    ['@nuxtjs/google-adsense', {
+      id: 'ca-pub-2686865538014434'
+    }]
   ],
   /*
   ** Build configuration

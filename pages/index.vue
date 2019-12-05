@@ -7,17 +7,16 @@
       <img src="@/assets/images/bg-img-1.jpg" alt="Vadivazhakiya Nambi">
     </div>
     <p style="margin: 0;padding: 5px;text-align: center;background-color: #995144;color: #fff;">
-      <a href="index.php" class="uths">Uthsav - 2019</a>
       <marquee style="font-family: 'Flamenco-R';width:90%;">Thirukkurungudi is one of the 108 Vaishnava Divyadesam.
         &clubs; The Lord Vadivazhakiya Nambi is positioned in 5 Stages in Thirukkurungudi. &clubs; The Great Kaisika
-        Puranam Drama is held at this place. &clubs; Bramotsavam 2018 Time Table <a href="uthsavam"
-          style="text-decoration:underline;font-family:'Flamenco-R';color:#fff;">Click here</a> </marquee>
+        Puranam Drama is held at this place. &clubs; Bramotsavam 2020 Time Table 
+        <nuxt-link to="/uthsavams">Click here</nuxt-link> </marquee>
     </p>
     <section class="layout1">
       <div class="row">
         <div class="col-md-5">
           <div class="q-image">
-            <img src="@/assets/images/nammalvar.jpg" alt="Nammazhval">
+            <img src="~/assets/images/nammalvar.jpg" alt="Nammazhval">
           </div>
         </div>
 
@@ -131,6 +130,11 @@
   }
   .slider-index img{
     width: 100%;
+  }
+  .marquee a {
+    color: #fff;
+    font-size:12px;
+    text-decoration:none
   }
 
 </style>

@@ -64,4 +64,12 @@
       font-weight: bold;
       font-family: 'Baloo Thambi', cursive;
   }
+  .navbar-nav .nuxt-link-exact-active {
+    background-color: khaki;
+    color: #333;
+  }
+  .navbar-nav .nuxt-link-exact-active:focus {
+    background-color: khaki;
+    color: #333;
+  }
 </style>
