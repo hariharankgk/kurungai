@@ -37,6 +37,17 @@
     </div>
 </template>
 
+<script>
+    export default {
+        data() {
+            return {
+                albumList: []
+            };
+        }
+    }
+</script>
+
+
 <style scoped>
     .head-top {
         padding-top: 100px;

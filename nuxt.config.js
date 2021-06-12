@@ -15,8 +15,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/jpg', href: '/vue/krg/Nambi2.jpg' },
-      { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css' },
-      { rel: 'stylesheet', href: '@/assets/css/style.css' }
+      { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css' }
     ],
     script: [
       { src: '//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js' },
@@ -51,10 +50,30 @@ export default {
     // Doc: https://bootstrap-vue.js.org/docs/
     // 'bootstrap-vue/nuxt',
     '@nuxtjs/pwa',
+    '@nuxtjs/axios',
+    '@nuxtjs/auth',
+    '@nuxtjs/proxy',
     ['@nuxtjs/google-adsense', {
-      id: 'ca-pub-2686865538014434'
-    }]
+      id: 'ca-pub-8452049817931871'
+    }],
   ],
+  auth: {
+    strategies: {
+      local: {
+        endpoints: {
+          login: { url: 'demo/api/authenticate', method: 'post', propertyName: 'data.token' },
+          user: { url: 'user.php', method: 'get', propertyName: 'data' },
+          logout: false
+        }
+      }
+    }
+  },
+
+  
+  axios: {
+    // proxy: true,
+    baseURL: 'http://localhost:9090/'
+  },
   /*
   ** Build configuration
   */

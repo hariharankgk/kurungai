@@ -1,4 +1,3 @@
-@import "https://fonts.googleapis.com/css?family=Baloo+Thambi|Coiny|Kavivanar|Meera+Inimai";
 .wa {
   width: auto;
 }
@@ -94,6 +93,30 @@ h6,
 a,
 span {
   font-family: 'Sans';
+}
+@font-face {
+  font-family: 'Baloo Thambi';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/baloothambi/v7/va9B4kXJzNhTFoA7CYcS8sHeRhf_.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Coiny';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/coiny/v8/gyByhwU1K989PUwcGFA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Kavivanar';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/kavivanar/v8/o-0IIpQgyXYSwhxP7_Jr5TRF.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Meera Inimai';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/meerainimai/v7/845fNMM5EIqOW5MPuvO3ILeZ-GLH.ttf) format('truetype');
 }
 @media only screen and (min-width: 768px) {
   ul {
@@ -1159,4 +1182,8 @@ marquee {
   background-color: #8e4342;
   color: #fff;
   font-family: 'Flamenco-R';
+}
+.page {
+  min-height: calc(100vh - 50px);
+  overflow-y: auto;
 }
